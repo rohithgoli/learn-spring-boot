@@ -22,7 +22,7 @@ public class CourseController {
 	// http://localhost:8080/courses/1
 	@GetMapping("/courses/1")
 	public Course getCourseDetails() {
-		return new Course(1, "Learn Java, Spring, SpringBoot", "rrk");
+		return new Course(1, "Learn Java, Spring, SpringBoot ", "rrk");
 	}
 	
 }
