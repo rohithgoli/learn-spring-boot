@@ -14,7 +14,15 @@ public class CourseController {
 	// http://localhost:8080/courses
 	@GetMapping("/courses")
 	public List<Course> getAllCourses() {
-		return Arrays.asList(new Course(1, "Learn Java, Spring, SpringBoot", "rrk"));
+		return Arrays.asList(new Course(1, "Learn Java, Spring, SpringBoot", "rrk"),
+								new Course(2, "Learn FullStack", "rrk")
+							);
+	}
+	
+	// http://localhost:8080/courses/1
+	@GetMapping("/courses/1")
+	public Course getCourseDetails() {
+		return new Course(1, "Learn Java, Spring, SpringBoot", "rrk");
 	}
 	
 }
