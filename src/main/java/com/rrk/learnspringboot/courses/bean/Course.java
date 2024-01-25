@@ -14,7 +14,13 @@ public class Course {
 	
 //	@Column(name="course_name")
 	private String name;
+	
 	private String author;
+	
+	// Default Constructor SHOULD be present for Entity
+	public Course() {
+		
+	}
 	
 	public Course(long id, String name, String author) {
 		super();
